@@ -1,0 +1,12 @@
+.empleado h5{
+    background-color: #d2b3ee;
+   }
+   .atenderSiguiente{
+   background-color: rgb(101, 43, 226);
+   }
+   .boton:hover{
+       background-color: #886ff8;
+   }
+   .empleado p{
+       background-color: rgb(171, 206, 230);
+   }

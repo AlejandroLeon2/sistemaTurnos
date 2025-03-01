@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/atencion.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Atencion</title>
+</head>
+<body>
+    <main>
+        <section class="container col-md-12 mt-5">
+            <section class="container row col-md-12 justify-content-center">
+                <div class="container row m-6 col-md-8 bg-light empleado justify-content-center Contadores">
+                    <h5 class="btm col-md-3 m-2 p-3 text-break text-wrap">En cola <span id="Cola">0</span></h5>
+                    <h5 class="btm col-md-3 m-2 p-3 text-wrap text-break">Ausente <span id="Ausentes">0</span></h5>
+                    <h5 class="btm col-md-3 m-2 p-3 text-break text-wrap">Atendidos <span id="Atendidos">0</span></h5>
+                    <div class="col-md-12 justify-content-center border row">
+                        <button onclick="Solucionado()" class="btn btn-success col-md-3 m-2 Solucionado">Solucionado</button>
+                        <button onclick="pendiente()" class="btn btn-warning col-md-3 m-2 text-white Pendiente">Pendiente</button>
+                        <button onclick="atenderSiguiente()" class="btn col-md-3 m-2 p-2 text-white atenderSiguiente">Atender siguiente</button>
+                    </div>
+                </div>
+                <div class="container row m-2 col-md-4 justify-content-center">
+                    <button onclick="Ausente()" class="btn btn-success w-90 m-1 col-md-6 Ausente">Ausente</button>
+                    <button onclick="Presente()" class="btn btn-danger w-90 m-1 col-md-6 Presente">Presente</button>  
+                </div>
+            </section>
+            <section class="container row border col-md-10 justify-content-center m-4">
+                <div class="container row col-md-9 bg-light datosCliente">
+                    <img class="col-md-12 m-1" src="" alt="">
+                    <p id="Nombre" class="h5 col-md-12 m-1">Nombre</p>
+                    <p id="Asunto" class="h6 col-md-12 m-1">Asunto</p>
+                    <p class="col-md-12 m-1">DNI: <span id="DNI">1234567</span></p>
+                    <p id="Tipo" class="col-md-12 m-1">Cliente</p>
+                    <p class="col-md-5 m-1">Atencion regular</p>
+                    <p class="col-md-5 m-1">Hora de llegada <span id="horaLlegada">0:00</span></p>
+                </div>
+                <button onclick="llamar()" class="btn btn col-md-2 text-white m-2 boton llamar">Llamar</button>
+            </section>
+        </section>
+    </main>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="js/atencion.js"></script>
+</body>
+</html>

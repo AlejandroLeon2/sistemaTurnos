@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Turnos virtuales</title>
+</head>
+<body>
+    <section id="page1" class="container" class="justify-content-center">
+        <img src="images/ibklogo.png" class="ibklogo mb-5" alt="interbank logo">
+        <section id="contenido" class="justify-content-center gap-5 input-group">
+            <button type="button" class="btn btn-outline-success btn-lg option-button mt-5 mb-5" data-target="page2">Ya tengo una cuenta</button>
+            <button type="button" class="btn btn-outline-success btn-lg option-button mt-5 mb-5 " data-target="page2">No tengo una cuenta</button>            
+        </section>
+        <footer class="help-text"> 
+            *Si necesita ayuda adicional por favor llamar al <strong>(0801) 0 0802</strong> o visitar <strong>https://interbank.pe/centro-de-ayuda</strong>
+        </footer>
+    </section>
+
+    <section id="page2" class="container" style="display: none;">
+        <img src="images/ibklogo.png" class="ibklogo mb-5" alt="interbank logo">
+        <section id="contenido" class="d-flex justify-content-center">
+            <div class="input-group" style="width: 30%;">
+                <input type="text" class="form-control border-success mt-5 mb-5" placeholder="Ingrese su DNI">
+                <button class="btn btn-outline-success mt-5 mb-5" type="button" id="button-addon2" data-target="page3">Ingresar</button>
+            </div>
+        </section>
+        <footer class="help-text"> 
+            *Si necesita ayuda adicional por favor llamar al <strong>(0801) 0 0802</strong> o visitar <strong>https://interbank.pe/centro-de-ayuda</strong>
+        </footer>
+    </section>    
+
+    <section id="page3" class="container" style="display: none;">
+        <img src="images/ibklogo.png" class="ibklogo" alt="interbank logo">
+            <section id="contenido" class="row justify-content-center">
+                <p class="fs-5 text mt-4">Seleccione el servicio para la atención</p>
+                <div class="col-md-2 d-grid">
+                    <button type="button" class="btn btn-outline-success btn-md option-button mt-5 mb-5" data-target="page4">Caja General</button>
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button type="button" class="btn btn-outline-success btn-md option-button mt-5 mb-5" data-target="page4">Servicio al Cliente</button>
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button type="button" class="btn btn-outline-success btn-md option-button mt-5 mb-5" data-target="page4">Crédito</button>
+                </div>
+                <div class="col-md-2 d-grid">
+                    <button type="button" class="btn btn-outline-success btn-md option-button mt-5 mb-5" data-target="page4">Gerencia</button>
+                </div>
+            </section>
+        <footer class="help-text"> 
+            *Si necesita ayuda adicional por favor llamar al <strong>(0801) 0 0802</strong> o visitar <strong>https://interbank.pe/centro-de-ayuda</strong>
+        </footer>
+    </section>
+
+    <section id="page4" class="container" style="display: none;">
+        <img src="images/ibklogo.png" class="ibklogo" alt="interbank logo">
+        <section id="contenido" class="justify-content-center">
+            <p class="fs-5 text mt-4">Seleccione el tipo de atención</p>
+            <button type="button" class="btn btn-outline-success btn-lg option-button mt-5 mb-5" data-target="page5">Regular</button>
+            <button type="button" class="btn btn-outline-success btn-lg option-button mt-5 mb-5" data-target="page5">Preferencial</button>            
+            </section>
+        <footer class="help-text"> 
+            *Si necesita ayuda adicional por favor llamar al <strong>(0801) 0 0802</strong> o visitar <strong>https://interbank.pe/centro-de-ayuda</strong>
+        </footer>
+    </section>
+
+    <section id="page5" class="container" class="d-flex flex-column justify-content-center align-items-center text-center" style="display: none;">
+        <div class="header">
+            <img class="ibklogo" src="images/ibklogo.png" alt="Logo-Interbank">
+            <p class="fs-2 fw-normal">Juan Manuel Avila Zavala</p>
+        </div>
+        <div>
+            <p class="fs-5 lh-1">Turno número:</p>
+            <p class="fw-bold fs-1">CR002</p>
+            <p class="fs-5">Servicio seleccionado:</p>
+            <p class="fw-bold fs-3">CREDITOS</p>
+            <div id="datetime" class="mt-4 fs-6"></div> 
+        </div>
+        <div class="help-text"> 
+            *Si necesita ayuda adicional por favor llamar al <strong>(0801) 0 0802</strong> o visitar <strong>https://interbank.pe/centro-de-ayuda</strong>
+        </div>
+    </section>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/ticket.js"></script>
+</body>
+</html>
